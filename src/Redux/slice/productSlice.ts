@@ -11,7 +11,7 @@ const initialState: ProductsProps = {
 export const getProductList = createAsyncThunk(
   "products/getProductList",
   async () => {
-    const res = await axios.get("https://api.example.com/products");
+    const res = await axios.get("https://foodish-api.com");
     return res.data;
   }
 );
